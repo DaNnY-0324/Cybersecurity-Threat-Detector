@@ -1,0 +1,16 @@
+# Python virtual environment
+venv/
+
+# Node modules
+docker/
+node_modules/
+
+# Logs
+*.log
+
+# Environment variables
+.env
+
+# IDE files
+.idea/
+.vscode/
