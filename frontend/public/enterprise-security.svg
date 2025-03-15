@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g clip-path="url(#clip0)">
+    <!-- Network Grid Background -->
+    <path d="M0 0h800v600H0z" fill="#F5F5F5" fill-opacity=".1"/>
+    <g stroke="#1976D2" stroke-opacity=".2" stroke-width="1">
+      <path d="M0 50h800M0 150h800M0 250h800M0 350h800M0 450h800M0 550h800"/>
+      <path d="M50 0v600M150 0v600M250 0v600M350 0v600M450 0v600M550 0v600M650 0v600M750 0v600"/>
+    </g>
+
+    <!-- Central Shield -->
+    <path d="M400 150l150 50v100c0 100-75 200-150 250-75-50-150-150-150-250V200l150-50z" fill="url(#shield-gradient)" stroke="#1976D2" stroke-width="4"/>
+
+    <!-- Connection Lines -->
+    <g stroke="#1976D2" stroke-width="2" stroke-dasharray="4 4">
+      <path d="M250 100l150 50M550 100l-150 50M250 500l150-50M550 500l-150-50"/>
+    </g>
+
+    <!-- Security Nodes -->
+    <g fill="#1976D2">
+      <circle cx="250" cy="100" r="20"/>
+      <circle cx="550" cy="100" r="20"/>
+      <circle cx="250" cy="500" r="20"/>
+      <circle cx="550" cy="500" r="20"/>
+    </g>
+
+    <!-- Pulse Rings -->
+    <g stroke="#1976D2" stroke-width="2" fill="none">
+      <circle cx="400" cy="300" r="40">
+        <animate attributeName="r" from="40" to="80" dur="2s" repeatCount="indefinite"/>
+        <animate attributeName="stroke-opacity" from=".6" to="0" dur="2s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="400" cy="300" r="40">
+        <animate attributeName="r" from="40" to="80" dur="2s" begin="1s" repeatCount="indefinite"/>
+        <animate attributeName="stroke-opacity" from=".6" to="0" dur="2s" begin="1s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+  </g>
+
+  <!-- Gradients -->
+  <defs>
+    <linearGradient id="shield-gradient" x1="400" y1="150" x2="400" y2="550">
+      <stop offset="0%" stop-color="#1976D2" stop-opacity=".2"/>
+      <stop offset="100%" stop-color="#1976D2" stop-opacity=".1"/>
+    </linearGradient>
+    <clipPath id="clip0">
+      <path fill="#fff" d="M0 0h800v600H0z"/>
+    </clipPath>
+  </defs>
+</svg>
