@@ -29,7 +29,6 @@ An advanced cybersecurity system that leverages transformer models to analyze ne
 - Docker Compose for service orchestration
 
 ## Prerequisites
-
 - Python 3.9+
 - Node.js 18+
 - Docker and Docker Compose
@@ -108,6 +107,41 @@ uvicorn app.main:app --reload
 cd frontend
 npm run dev
 ```
+
+### UI/UX Features
+
+#### Theme System
+The application features a comprehensive theme system with:
+- Dark/Light mode toggle with system preference detection
+- Theme persistence using localStorage
+- Extended color palette with primary/secondary variants
+- Enhanced typography with Inter font
+- Custom component styling
+
+#### Authentication
+- Enhanced login and registration pages
+- Secure authentication flow
+- Protected routes
+- Modern UI with glass-morphism effects
+
+#### Responsive Design
+- Mobile-optimized layouts
+- Collapsible drawer navigation
+- Responsive breakpoints
+- Adaptive typography
+
+#### Landing Page
+- Modern design with gradient overlays and security pattern backgrounds
+- Glass-morphism effects on feature cards
+- Smooth animations and hover states
+- Responsive typography and layout
+- Enhanced button styling with gradients
+
+#### Notification System
+- Global notification context
+- Material-UI Snackbar integration
+- Support for multiple notification types
+- Email and Slack integration options
 
 ## Testing
 
